@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from db import save_log, get_logs, get_stats
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 app = FastAPI()
 
@@ -34,7 +34,7 @@ def score_output(prompt: str, output: str) -> float:
 
     Reply with ONLY a number between 0.0 and 1.0. Nothing else.
     """
-    result = openai.chat.completions.create(
+    result = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": judge_prompt}]
     )
@@ -46,7 +46,7 @@ def score_output(prompt: str, output: str) -> float:
 @app.post("/call")
 async def call_llm(req: PromptRequest):
     start = time.time()
-    response = openai.chat.completions.create(
+    response = client.chat.completions.create(
         model=req.model,
         messages=[{"role": "user", "content": req.prompt}]
     )
