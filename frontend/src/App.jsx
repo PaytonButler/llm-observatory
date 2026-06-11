@@ -9,9 +9,9 @@ const API = "https://llm-observatory-backend.onrender.com";
 
 const theme = {
   bg: "#0f1117",
-  surface: "#27211a",
-  border: "#3a2e2a",
-  accent: "#f5890d",
+  surface: "#353433",
+  border: "#1b1a1a",
+  accent: "#da7a0c",
   accentSoft: "#6b3805",
   textPrimary: "#f0f0f5",
   textSecondary: "#a8968b",
@@ -99,7 +99,16 @@ export default function App() {
       {/* Header */}
       <div style={{ marginBottom: 32 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <div style={{ width: 10, height: 10, borderRadius: "50%", background: theme.accent, boxShadow: `0 0 10px ${theme.accent}` }} />
+
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            width: "100%",
+          }}
+        >
           <h1 style={{ fontSize: 22, fontWeight: 700, margin: 0 }}>LLM Observatory</h1>
         </div>
         <p style={{ color: theme.textSecondary, margin: "6px 0 0 22px", fontSize: 14 }}>
