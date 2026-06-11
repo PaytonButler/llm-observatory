@@ -9,12 +9,12 @@ const API = "https://llm-observatory-backend.onrender.com";
 
 const theme = {
   bg: "#0f1117",
-  surface: "#1a1d27",
-  border: "#2a2d3a",
-  accent: "#7c6dfa",
-  accentSoft: "#2d2750",
+  surface: "#27211a",
+  border: "#3a2e2a",
+  accent: "#f5890d",
+  accentSoft: "#6b3805",
   textPrimary: "#f0f0f5",
-  textSecondary: "#8b8fa8",
+  textSecondary: "#a8968b",
   green: "#4ade80",
   yellow: "#facc15",
 };
