@@ -249,7 +249,7 @@ export default function App() {
             {logs.length === 0 && (
               <tr>
                 <td colSpan={6} style={{ padding: "32px 12px", textAlign: "center", color: theme.textSecondary }}>
-                  No calls yet — send your first prompt above
+                  No calls yet, send your first prompt above
                 </td>
               </tr>
             )}
