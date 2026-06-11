@@ -5,7 +5,7 @@ import {
   BarChart, Bar, CartesianGrid
 } from "recharts";
 
-const API = "http://localhost:8000";
+const API = "https://llm-observatory-backend.onrender.com";
 
 const theme = {
   bg: "#0f1117",
