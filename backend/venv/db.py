@@ -29,6 +29,7 @@ def get_logs():
         rows = result.mappings().all()
         return [dict(row) for row in rows]
 
+
 def get_stats():
     with engine.connect() as conn:
         result = conn.execute(text("""
