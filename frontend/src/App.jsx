@@ -24,7 +24,7 @@ function StatCard({ label, value }) {
     <div style={{
       background: theme.surface,
       border: `1px solid ${theme.border}`,
-      borderRadius: 12,
+      borderRadius: 6,
       padding: "20px 24px",
       flex: 1,
     }}>
