@@ -9,7 +9,7 @@ const API = "https://llm-observatory-backend.onrender.com";
 
 const theme = {
   bg: "#0f1117",
-  surface: "#353433",
+  surface: "#3d3d3d",
   border: "#1b1a1a",
   accent: "#99938c",
   accentSoft: "#544c44",
