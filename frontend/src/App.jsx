@@ -11,10 +11,10 @@ const theme = {
   bg: "#0f1117",
   surface: "#353433",
   border: "#1b1a1a",
-  accent: "#da7a0c",
-  accentSoft: "#6b3805",
+  accent: "#99938c",
+  accentSoft: "#544c44",
   textPrimary: "#f0f0f5",
-  textSecondary: "#a8968b",
+  textSecondary: "#a79b93",
   green: "#4ade80",
   yellow: "#facc15",
 };
